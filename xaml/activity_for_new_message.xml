@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#66CCFF"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/head7"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            android:id="@+id/textView6"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="输入内容"
+            android:id="@+id/newContent"
+            android:layout_marginTop="48dp"
+            android:layout_marginLeft="37dp"
+            android:layout_marginStart="37dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/text"
+            android:layout_below="@+id/newContent"
+            android:layout_alignLeft="@+id/newContent"
+            android:layout_alignStart="@+id/newContent"
+            android:layout_marginTop="37dp"
+            android:hint="分享书评..."
+            android:layout_alignParentTop="false"
+            android:gravity="top|left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="书架"
+            android:id="@+id/textView7"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/text"
+            android:layout_alignStart="@+id/text"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="New Button"
+            android:id="@+id/button"
+            android:background="@layout/corner3"
+            android:layout_marginBottom="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <Gallery
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:id="@+id/gallery"
+            android:layout_below="@+id/textView7"
+            android:layout_alignLeft="@+id/textView7"
+            android:layout_alignStart="@+id/textView7"
+            android:layout_marginTop="37dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
